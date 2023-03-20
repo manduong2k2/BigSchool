@@ -8,8 +8,40 @@
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+.navbar-nav {
+    --bs-nav-link-color: rgb(56 192 198 / 55%);
+    --bs-nav-link-hover-color: rgb(255 255 255 / 75%);
+}
 .dl-horizontal dt {
     white-space: normal;
+}
+.course{
+    list-style:none;
+}
+.course > li{
+    position:relative;
+    margin-bottom:30px;
+}
+.course > li .date{
+    text-align:center;
+    background-color: cornflowerblue;
+    color:white;
+    width:60px;
+    border-radius:8px;
+}
+.course > li .details{
+    position:absolute;
+    top:0;
+    left:70px;
+}
+.course > li .details .lecture{
+    color:forestgreen;
+    font-weight:bold;
+}
+.course > li .details .category{
+    color:hotpink;
+    font-style: italic;
+    text-decoration : underline;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
